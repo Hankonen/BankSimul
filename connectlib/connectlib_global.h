@@ -1,0 +1,12 @@
+#ifndef CONNECTLIB_GLOBAL_H
+#define CONNECTLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CONNECTLIB_LIBRARY)
+#  define CONNECTLIBSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define CONNECTLIBSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CONNECTLIB_GLOBAL_H
